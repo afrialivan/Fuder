@@ -1,0 +1,72 @@
+.logo {
+  width: 200px;
+}
+
+.kotak {
+  position: relative;
+  height: 550px;
+  width: 600px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin: auto;
+  background-color: white;
+}
+
+.hiasan1 {
+  position: absolute;
+  top: 0;
+  right: -300px;
+  z-index: -99;
+  width: 300px;
+}
+
+.hiasan2 {
+  position: absolute;
+  top: 0;
+  left: -312px;
+  z-index: -99;
+  width: 314px;
+}
+
+form {
+  padding: 50px;
+}
+
+form h2 {
+  font-size: 50px;
+}
+
+.daftar {
+  float: right;
+  color: #6D8B74;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.form-control {
+  border: 1px solid #6D8B74;
+  border-radius: 15px;
+  padding: 200px;
+}
+
+
+.bantuan {
+  float: right;
+  color: #6D8B74;
+  font-weight: 500;
+}
+
+.btn {
+  border: 1px solid #6D8B74;
+  height: 60px;
+  background-color: transparent;
+  color: #6D8B74;
+  width: 100%;
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+.btn:hover {
+  background-color: #6D8B74;
+  color: white;
+}

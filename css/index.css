@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+}
+
+body {
+  position: relative;
+}
+
+.fuder {
+  color: #6D8B74;
+}
+
+.hero, .penjelasan, .siapa {
+  margin: 0 150px;
+}
+
+.penjelasan, .keunggulan {
+  margin-bottom: 100px;
+}
+.hero {
+  margin-bottom: 250px;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  margin-top: 200px;
+  width: 800px;
+  margin-bottom: 100px;
+}
+
+.gunakan {
+  background-color: transparent;
+  border: 1px solid #6D8B74;
+  border-radius: 10px;
+  font-size: 50px;
+  color: #6D8B74;
+  width: 600px;
+}
+
+.gunakan:hover {
+  background-color: #6D8B74;
+  color: white;
+}
+
+.teks h2, .keunggulan h2, .siapa h2 {
+  font-size: 50px;
+}
+
+.teks p, .siapa p {
+  font-size: 30px;
+}
+
+.gambar img {
+  width: 400px;
+  margin-left: 150px;
+  border-radius: 20px;
+}
+
+.keunggulan-gambar {
+  justify-content: space-evenly;
+}
+
+.kg img {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.siapa, .ayo {
+  margin-bottom: 180px;
+}
+
+.ayo h1 {
+ font-size: 80px;
+}
+
+.ayo p {
+  font-size: 45px;
+}
+
+.hiasan {
+  position: absolute;
+  bottom: 230px;
+  width: 280px;
+  z-index: -99;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #6D8B74;
+  height: 250px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+footer .a {
+  padding-top: 70px;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}

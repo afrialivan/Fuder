@@ -1,0 +1,305 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+  --nav-width: 300px;
+
+  /*===== Colors =====*/
+  --first-color: #6D8B74;
+  --first-color-light: #fff;
+  --white-color: #F7F6FB;
+  --second-color: #BCCAA5;
+
+  /*===== Font and typography =====*/
+  --body-font: 'Nunito', sans-serif;
+  --normal-font-size: 1rem;
+  --font-size: 2rem;
+
+  /*===== z index =====*/
+  --z-fixed: 100;
+
+  --width-layar: 100%;
+  --width-font: 50%;
+}
+
+/*===== BASE =====*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: var(--header-height) 0 0 0;
+  padding: 0 1rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: .5s;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*===== NAV =====*/
+.l-navbar {
+  position: fixed;
+  top: 0;
+  left: -30%;
+  width: var(--nav-width);
+  height: 100vh;
+  background-color: var(--first-color);
+  padding: .5rem 1rem 0 0;
+  transition: .5s;
+  z-index: var(--z-fixed);
+}
+
+.nav{
+  margin-top: -20px;
+}
+
+
+/*Add padding body movil*/
+.body-pd {
+  padding-left: calc(var(--nav-width) + 1rem);
+}
+
+/*Active links*/
+.active {
+  color: var(--white-color);
+}
+
+.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 32px;
+  background-color: var(--white-color);
+}
+
+/* ===== MEDIA QUERIES=====*/
+@media screen and (min-width: 768px) {
+  body {
+    margin: calc(var(--header-height) + 1rem) 0 0 0;
+    padding-left: calc(var(--nav-width) + 2rem);
+  }
+
+  .l-navbar {
+    left: 0;
+    padding: 1rem 1rem 0 0;
+  }
+}
+
+/* .card img {
+  height: 200px;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.noHover {
+  pointer-events: none;
+}
+
+.side-bar {
+  background-color: var(--first-color);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 99;
+}
+
+.navbar-nav {
+  position: relative;
+}
+
+.hover {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  width: 70px;
+  transition: .5s;
+}
+
+.fotoProfil {
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+.hover-foto {
+  display: block;
+  margin: auto;
+}
+
+.hov {
+  position: absolute;
+  top: 30px;
+  left: 23px;
+  right: 38px;
+  transition: 1s;
+}
+
+.hover-foto:hover .hov {
+  transition: 1s;
+  height: 250px;
+  border: 2px solid black;
+  border-radius: 20px;
+
+}
+
+.foto {
+  width: 150px;
+}
+
+.nav-item {
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.nav-link .icon {
+  width: 25px;
+  margin-top: -5px;
+}
+
+
+.kotak {
+  display: flex;
+  justify-content: center;
+}
+
+.navigasi {
+  /* display: flex; */
+  justify-content: center;
+  position: fixed;
+  height: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--first-color);
+}
+
+.navi {
+  text-decoration: none;
+  color: white;
+  width: 70px;
+  margin-top: 13px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.navigasii {
+  /* display: inline-block; */
+  width: 35px;
+}
+
+.nama {
+  margin: auto;
+  font-size: 1.5rem;
+  width: 220px;
+}
+
+.copyright{
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.9rem;
+  left: 7%;
+  right: 10%;
+}
+
+.copyright p {
+  margin-top: -10px;
+}
+
+.judul {
+  margin-top: -40px;
+  margin-bottom: 30px;
+}
+
+.row {
+  margin-top: 50px;
+}
+
+.chats {
+  position: absolute;
+  width: 300px;
+  top: 0;
+  bottom: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .card-body {
+    font-size: 1rem;
+  }
+}
+
+/*
+@media screen and (max-width: 1790px){
+  @media screen and (min-width: 1400px){
+    
+    .card {
+      width: 390px;
+    }
+  }
+}
+
+*/
+
+@media screen and (max-width: 1350px){
+  .judull {
+    line-height: 2.1;
+    position: fixed;
+    font-size: 1.5rem;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    z-index: 99;
+  }
+
+  .row {
+    margin-top: 70px;
+  }
+} 
+
+
+@media screen and (max-width: 1200px) {
+  @media screen and (min-width: 765px) {
+    .row {
+      margin-left: -300px;
+    }
+
+    .card {
+      width: calc(var(--width-layar) - 50px);
+    }
+
+    .card-body {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/* @media screen and (max-width: 650px){
+  @media screen and (min-width: 600px){
+    
+  }
+} */
